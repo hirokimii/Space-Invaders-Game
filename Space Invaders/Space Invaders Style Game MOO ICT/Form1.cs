@@ -18,7 +18,7 @@ namespace Space_Invaders_Style_Game_MOO_ICT
     {
         private CancellationTokenSource cancellationTokenSource;
         SerialPort serialPort;
-        int score = 50;
+        int score = 10;
         int lives = 5;
         int enemyBulletTimer = 300;
         int frequency1 = 3000;
@@ -219,7 +219,7 @@ namespace Space_Invaders_Style_Game_MOO_ICT
 
         private void gameSetup()
         {
-            txtScore.Text = "Invaders:50";
+            txtScore.Text = "Invaders:10";
             score = 10;
             lives = 5;
             enemyBulletTimer = 300;
