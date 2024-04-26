@@ -6,7 +6,7 @@ Space Invaders game in C# with an mBed game controller. The controller communica
 
 The Space Invaders game was developed using MOO ICT's [tutorial](https://www.mooict.com/c-tutorial-create-a-full-space-invaders-game-using-visual-studio/#google_vignette) as a starting template.
 
-When starting the game, there are 3 game modes: Easy, Medium, Hard. The difference between the modes is the rate at which the spader invaders appear on the screen. There are designated bottons on the mBed Controller that allows the mode to be selected.
+When starting the game, there are 3 game modes: Easy, Medium, Hard. The difference between the modes is the rate at which the spader invaders appear on the screen. There are designated bottons on the mBed Controller which allow the mode to be selected.
 
 Once the game initializes, it runs through ```mainGameTimerEvent```, a function that runs every 20 ms. In that function, it opens a serial port and reads controls from the mBed controller, such as the analog joystick and shooting button. Simulatenously, ```makeInvaders``` generates invaders on to the screen, as well as ```makeBullet("InvaderBullet")``` which shoots bullets at the spaceship.
 
