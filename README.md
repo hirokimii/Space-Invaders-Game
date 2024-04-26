@@ -6,7 +6,7 @@ Space Invaders game in C# with an mBed game controller. The controller communica
 
 The Space Invaders game was developed using MOO ICT's [tutorial](https://www.mooict.com/c-tutorial-create-a-full-space-invaders-game-using-visual-studio/#google_vignette) as a starting template.
 
-The gmae is built upon the Windows Forms(.NET) framework allowing us to create multiple applications for start screen and main game screen, and communication between the two. We utilized System.IO.Port and System.Thread.Tasks libraries in order to implement serial port COM communication as well as multithreading within the game for communication efficiency.
+The game is built upon the Windows Forms (.NET) framework allowing us to create multiple applications for start screen and main game screen, and communication between the two. We utilized System.IO.Port and System.Thread.Tasks libraries in order to implement serial port COM communication as well as multithreading within the game for communication efficiency.
 
 When starting the game, there are 3 levels of difficulty: Easy, Medium, Hard. The difference between the levels is the rate at which the space invaders appear on the screen. There are designated bottons on the mBed Controller which allow the level to be selected.
 
