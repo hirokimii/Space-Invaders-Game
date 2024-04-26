@@ -18,9 +18,11 @@ The game can be won by eliminating all the invaders before using up all 5 lives.
 
 The components on the controller include an analog joystick, push button for shooting, 3 push bottons to select difficulty, 3 LEDS for the levels of difficulty, and a speaker with a class D audio amp. The mBed program uses RTOS multithreading to run ```main``` and ```bullet_thread``` simultaneously. ```main``` reads the analog joystick movements and pushbuttons, and sends the data to the C# game through the serial port. On the other hand, ```bullet_thread``` is reading data from the serial port to play audio through the speaker, such as a bullet shot by the spaceship.
 
-## Quick Demo Video
+## Short Demo Video
 
-https://github.com/hirokimii/Space-Invaders-Game/assets/145586445/5ee4b65c-1688-464e-aa60-72baa8c0d3b2
+https://github.com/hirokimii/Space-Invaders-Game/assets/145586445/2d516b03-969e-487f-ac5d-23b988daa495
+
+
 
 
 
