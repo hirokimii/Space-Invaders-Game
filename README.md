@@ -8,7 +8,7 @@ The Space Invaders game was developed using MOO ICT's [tutorial](https://www.moo
 
 When starting the game, there are 3 game modes: Easy, Medium, Hard. The difference between the modes is the rate at which the spader invaders appear on the screen. There are designated bottons on the mBed Controller which allow the mode to be selected.
 
-Once the game initializes, it runs through ```mainGameTimerEvent```, a function that runs every 20 ms. In that function, it opens a serial port and reads controls from the mBed controller, such as the analog joystick and shooting button. Simulatenously, ```makeInvaders``` generates invaders on to the screen, as well as ```makeBullet("InvaderBullet")``` which shoots bullets at the spaceship.
+Once the game initializes, it runs through ```mainGameTimerEvent```, a function that runs every 20 ms. In ```mainGameTimerEvent```, it opens a serial port and reads controls from the mBed controller, such as the analog joystick and shooting button. Simulatenously, ```makeInvaders``` generates invaders on to the screen, as well as ```makeBullet("InvaderBullet")``` which shoots bullets at the spaceship.
 
 The game can be won by eliminating all the invaders before using up all 5 lives. The objective is to protect Earth and each invader let past costs a life. In the current code, you would encounter 10 invaders.
 
