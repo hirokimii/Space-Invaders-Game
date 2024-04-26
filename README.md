@@ -14,6 +14,8 @@ The game can be won by eliminating all the invaders before using up all 5 lives.
 
 ## mBed Controller
 
+<img src="https://github.com/hirokimii/Space-Invaders-Game/assets/145586445/46568481-3964-44da-af38-3b045f8fd810" width="504" height="378">
+
 The components on the controller include an analog joystick, push button for shooting, 3 push bottons to select game mode, 3 LEDS to represent the game modes, and a speaker with a class D audio amp.
 
 
