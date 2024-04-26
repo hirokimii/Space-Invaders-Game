@@ -10,13 +10,15 @@ When starting the game, there are 3 levels of difficulty: Easy, Medium, Hard. Th
 
 Once the game initializes, it runs through ```mainGameTimerEvent```, a function that runs every 20 ms. In ```mainGameTimerEvent```, it opens a serial port and reads data from the mBed controller, such as the analog joystick and shooting button. Simulatenously, ```makeInvaders``` generates invaders on to the screen, as well as ```makeBullet("InvaderBullet")``` which shoots bullets at the spaceship.
 
-The game can be won by eliminating all the invaders before using up all 5 lives. The objective is to protect Earth and each invader let past costs a life. In the current code, you would encounter 10 invaders.
+The game can be won by eliminating all the invaders before using up all 5 lives. The objective is to protect Earth and each invader you let past costs a life. In the current code, you would encounter 10 invaders.
 
 ## mBed Controller
 
 <img src="https://github.com/hirokimii/Space-Invaders-Game/assets/145586445/46568481-3964-44da-af38-3b045f8fd810" width="504" height="378">
 
-The components on the controller include an analog joystick, push button for shooting, 3 push bottons to select difficulty, 3 LEDS for the levels of difficulty, and a speaker with a class D audio amp. The mBed program uses RTOS multithreading to run ```main``` and ```bullet_thread``` simultaneously. ```main``` reads the analog joystick movements and pushbuttons, and sends the data to the C# game through the serial port. On the other hand, ```bullet_thread``` is reading data from the serial port to play audio through the speaker, such as a bullet shot by the spaceship.
+The components on the controller include an analog joystick, push button for shooting, 3 push bottons to select difficulty, 3 LEDS for the levels of difficulty, and a speaker with a class D audio amp. 
+
+The mBed program uses RTOS multithreading to run ```main``` and ```bullet_thread``` simultaneously. ```main``` reads the analog joystick movements and pushbuttons, and sends the data to the C# game through the serial port. On the other hand, ```bullet_thread``` is reading data from the serial port to play audio through the speaker, such as a shooting sound.
 
 ## Short Demo Video
 
